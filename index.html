@@ -6,27 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Dashboard</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-
-
-
 </head>
-
-
 <body>
-  
+  <!-- Header -->
+  <header class="header">
+    <h1>Weather Dashboard</h1>
+  </header>
 
+  <!-- Main content (search bar and weather info) -->
+  <div class="content">
+    <!-- Search bar -->
+    <aside class="search-container">
+      <!-- Search Form -->
+      <form class="search-item">
+        <label class="search-titles">Search here</label>
+        <input type="text" placeholder="Dallas"class="search-input">
+        <input type="submit" class="submit-btn">
+      </form>
+      <!-- Recently viewed list -->
+      <div class="search-item">
+        <h2 class="search-titles">Recently Viewed</h2>
+        <ul>
+          <li>Dallas</li>
+          <li>Dallas</li>
+          <li>Dallas</li>
+          <li>Dallas</li>
+          <li>Dallas</li>
+          <li>Dallas</li>
+          <li>Dallas</li>
+          <li>Dallas</li>
+        </ul>
+      </div>
+    </aside>
+    <!-- Weather info -->
+    <main class="weather">
 
+      <!-- Current weather section -->
+      <section class="current-weather">
+        <div class="current-city">
+          <h1 class="city">Dallas</h1>
+          <h2 class="current-date">3/15/2022</h2>
+          <i class="fa-solid fa-bolt-lightning fa-3x"></i>
+        </div>
+        <ul class="conditions">
+          <li>Temperature</li>
+          <li>Wind Speed</li>
+          <li>Humidity</li>
+          <li>UV Index</li>
+        </ul>
+        <ul class="conditions">
+          <li class="condition-value">69.69 F</li>
+          <li class="condition-value">6.9 MPH</li>
+          <li class="condition-value">69%</li>
+          <li class="condition-value">.69</li>
+        </ul>
+      </section>
 
+      <!-- Forecast section -->
+      <section class="forecast">
+        <div class="forecast-card">
+          <div class="card-header">
+            <h2>12/12/1212</h2>
+            <i class="fa-solid fa-bolt-lightning fa-2x"></i>
+          </div>
+          <ul class="forecast-conditions">
+            <li>Temp</li>
+            <li>Wind</li>
+            <li>Humidity</li>
+          </ul>
+          <ul class="forecast-conditions">
+            <li class="forecast-value">69.69 F</li>
+            <li class="forecast-value">6.9 MPH</li>
+            <li class="forecast-value">69%</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 
-
-
-
-
-
-
-
-
+  <script src="https://kit.fontawesome.com/5d42a33db8.js" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
-
 </body>
 </html>
