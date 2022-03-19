@@ -28,7 +28,6 @@
 /* Search bar */
 .search-container {
   flex-basis: 25%;
-  background-color: green;
 }
 
 .search-item {
@@ -39,11 +38,10 @@
 
 .search-titles {
   font-size: 5vh;
-  color: whitesmoke;
   margin-bottom: 1vh;
 }
 
-.search-input {
+#search-input {
   width: 26vw;
   height: 5vh;
   border-radius: 10px;
@@ -55,33 +53,14 @@
 .submit-btn {
   width: 8vw;
   height: 5vh;
-  background-color: navy;
+  background-color: blue;
   color: white;
   border-radius: 10px;
-}
-
-/* List of recent searches */
-.search-item ul {
-  list-style: none;
-}
-
-.search-item ul li {
-  font-size: 2vh;
-  color: #383838;
-  width: 26vw;
-  height: 5vh;
-  border: 1px solid blue;
-  background-color: lightgray;
-  border-radius: 10px;
-  margin-bottom: 1vh;
-  padding-top: 1.25vh;
-  text-align: center;
 }
 
 /* Weather */
 .weather {
   flex-basis: 75%;
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,22 +70,22 @@
 /* Current weather section */
 .current-weather {
   flex-basis: 55%;
-  background-color: limegreen;
+  background-color: #383838;
   padding: 2vw;
   display: flex;
   justify-content: space-between;
 }
 
 .current-city {
-  flex-basis: 60%;
+  text-align: end;
 }
 
-.city {
+#cityName {
   color: white;
   font-size: 8vh;
 }
 
-.current-date {
+#currentDate {
   color: white;
   font-size: 4.5vh;
 }
@@ -114,10 +93,10 @@
 .conditions {
   padding-top: 15vh;
   list-style: none;
-  flex-basis: 20%;
+  flex-basis: 60%;
 }
 
-.conditions li {
+.conditions h3 {
   color: white;
   font-size: 3.5vh;
   margin-bottom: 1vh;
@@ -130,25 +109,17 @@
 /* Forecast section */
 .forecast {
   flex-basis: 35%;
-  background-color: aquamarine;
+  background-color: gray;
+  color: white;
   display: flex;
 }
 
 .forecast-card {
-  flex-basis: 17.5%;
+  flex-basis: 20%;
   padding: 1%;
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid black;
-}
-
-.forecast-conditions {
-  list-style: none;
-  width: 50%;
-}
-
-.forecast-value {
-  text-align: end;
+  border: 2px solid black;
 }
 
 i {
